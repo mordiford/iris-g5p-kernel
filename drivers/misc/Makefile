@@ -95,7 +95,10 @@ obj-$(CONFIG_FSUSB42_MUX) += fsusb42_mux.o
 obj-$(CONFIG_SENSORS_STML0XX) += stml0xx/
 obj-$(CONFIG_TPS61280) += tps61280.o
 obj-$(CONFIG_DTV_FC8300) += moto-dtv-fc8300/
+obj-$(CONFIG_V4L2_HAL) += motomods/v4l2_hal/
+obj-$(CONFIG_MOD_GREYBUS) += motomods/greybus/
 
 # TODO: remove me b/62058353
 subdir-ccflags-y += \
-	-Wno-ignored-attributes
+	-Wno-ignored-attributes \
+	-Wno-shift-overflow
